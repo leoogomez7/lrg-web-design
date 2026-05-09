@@ -31,19 +31,24 @@ export function Nav() {
         scrolled ? "w-[min(94%,1040px)]" : "w-[min(96%,1120px)]"
       }`}
     >
-      <div className="glass-strong rounded-full pl-2 pr-2 py-2 flex items-center justify-between gap-3">
+      {/* Contenedor tipo Cápsula Negra */}
+      <div className={`flex items-center justify-between gap-3 px-4 py-2 rounded-full border border-white/10 transition-all duration-500 ${
+        scrolled 
+          ? "bg-black/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.5)]" 
+          : "bg-black/40 backdrop-blur-md"
+      }`}>
         <a href="#top" className="flex items-center gap-2 shrink-0">
           <img
             src={logo}
             alt="LRG Web Developer"
-            className="w-9 h-9 rounded-full object-cover"
+            className="w-9 h-9 rounded-full object-cover border border-white/20"
           />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-0.5">
+        <nav className="hidden lg:flex items-center gap-1">
           <a
             href="#top"
-            className="text-[11px] text-foreground font-medium transition-colors px-3 py-1.5 rounded-full hover:bg-white/5 whitespace-nowrap"
+            className="text-[12px] text-white font-medium transition-colors px-4 py-2 rounded-full hover:bg-white/10"
           >
             Inicio
           </a>
@@ -51,7 +56,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[11px] text-muted-foreground hover:text-foreground transition-colors px-3 py-1.5 rounded-full hover:bg-white/5 whitespace-nowrap"
+              className="text-[12px] text-white/70 hover:text-white transition-colors px-4 py-2 rounded-full hover:bg-white/10 whitespace-nowrap"
             >
               {l.label}
             </a>
@@ -60,7 +65,7 @@ export function Nav() {
 
         <button
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden inline-flex items-center gap-2 h-9 px-3 rounded-full glass"
+          className="lg:hidden inline-flex items-center gap-2 h-9 px-4 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
           aria-label="Menú"
         >
           {open ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
@@ -68,18 +73,19 @@ export function Nav() {
         </button>
       </div>
 
+      {/* Menú Mobile Desplegable */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="lg:hidden mt-2 glass-strong rounded-3xl p-3 flex flex-col"
+            className="lg:hidden mt-2 bg-black/90 backdrop-blur-2xl rounded-3xl p-3 flex flex-col border border-white/10 shadow-2xl"
           >
             <a
               href="#top"
               onClick={() => setOpen(false)}
-              className="text-sm text-foreground font-medium transition-colors px-4 py-3 rounded-2xl hover:bg-white/5"
+              className="text-sm text-white font-medium px-4 py-3 rounded-2xl hover:bg-white/10"
             >
               Inicio
             </a>
@@ -88,7 +94,7 @@ export function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors px-4 py-3 rounded-2xl hover:bg-white/5"
+                className="text-sm text-white/70 hover:text-white px-4 py-3 rounded-2xl hover:bg-white/10"
               >
                 {l.label}
               </a>
