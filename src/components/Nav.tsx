@@ -28,10 +28,10 @@ export function Nav() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       /* 
-         CLAVE: w-[65%] hace que la barra sea pequeña en el celular.
-         inset-x-0 y mx-auto lo mantienen perfectamente centrado.
+         CAMBIO CLAVE: quitamos mx-auto y añadimos left-4.
+         Ahora el menú se pega a la izquierda con un pequeño margen.
       */
-      className={`fixed top-4 inset-x-0 mx-auto z-50 transition-all duration-500 w-[65%] lg:w-[min(94%,1120px)] ${
+      className={`fixed top-4 left-4 z-50 transition-all duration-500 w-[65%] lg:left-1/2 lg:-translate-x-1/2 lg:w-[min(94%,1120px)] ${
         scrolled ? "max-w-[1040px]" : "max-w-[1120px]"
       }`}
     >
@@ -49,7 +49,7 @@ export function Nav() {
           />
         </a>
 
-        {/* Menú Escritorio (Solo se ve en pantallas grandes) */}
+        {/* Menú PC (Centrado en PC) */}
         <nav className="hidden lg:flex items-center gap-1">
           <a href="#top" className="text-[12px] text-white font-medium px-4 py-2 rounded-full hover:bg-white/10">
             Inicio
@@ -61,25 +61,24 @@ export function Nav() {
           ))}
         </nav>
 
-        {/* Botón Menú Mobile (Más compacto) */}
+        {/* Botón Menú Mobile */}
         <button
           onClick={() => setOpen((v) => !v)}
           className="lg:hidden inline-flex items-center gap-1.5 h-8 px-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-          aria-label="Menú"
         >
           {open ? <X className="w-3.5 h-3.5" /> : <Menu className="w-3.5 h-3.5" />}
           <span className="text-[10px] font-medium">Menú</span>
         </button>
       </div>
 
-      {/* Menú Mobile Desplegable (Ajustado al ancho del header) */}
+      {/* Menú Mobile Desplegable */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            /* w-full aquí significa que mide el 65% de la pantalla (igual que el header) */
+            /* Alineado a la izquierda del header */
             className="lg:hidden mt-2 w-full bg-black/95 backdrop-blur-2xl rounded-[2rem] p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
           >
             <a
@@ -94,7 +93,7 @@ export function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-xs text-white/70 hover:text-white px-4 py-2.5 rounded-xl hover:bg-white/10 w-full text-left"
+                className="text-sm text-white/70 hover:text-white px-4 py-2.5 rounded-xl hover:bg-white/10 w-full text-left"
               >
                 {l.label}
               </a>
