@@ -11,7 +11,7 @@ import gamingImg from "@/assets/project-gaming.jpg";
 const projects = [
   {
     name: "Digital Commerce Hub",
-    type: "Dashboard",
+    type: "Dashboard - Finalizado",
     url: "https://digital-commerce-hub-main.vercel.app",
     image: dashboardImg,
     description:
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     name: "Bodegón Delicia",
-    type: "Web Gastronómica",
+    type: "Web Gastronómica - Finalizado",
     url: "https://bodegon-delicia-web.vercel.app",
     image: restaurantImg,
     description:
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     name: "Mi Turno Ya Reservado",
-    type: "Turnos de Citas Médicas",
+    type: "Turnos de Citas Médicas - En desarrollo",
     url: "https://mi-turno-ya-reservado.vercel.app",
     image: medicalImg,
     description:
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     name: "Manda Factura",
-    type: "Generador de Facturas / Recibos",
+    type: "Generador de Facturas / Recibos - En desarrollo",
     url: "https://manda-factura.vercel.app",
     image: invoiceImg,
     description:
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     name: "Cancha Limpia",
-    type: "Estadísticas de Jugadores",
+    type: "Estadísticas de Jugadores - En desarrollo",
     url: "https://cancha-limpia.vercel.app",
     image: statsImg,
     description:
@@ -66,7 +66,7 @@ const projects = [
   },
   {
     name: "La Banda Gaming",
-    type: "Simulador de Torneos Gaming",
+    type: "Simulador de Torneos Gaming - En desarrollo",
     url: "https://la-banda-gaming.vercel.app",
     image: gamingImg,
     description:
@@ -78,12 +78,12 @@ const projects = [
 ];
 
 const allSites = [
-  { name: "Bodegón Delicia", url: "https://bodegon-delicia-web.vercel.app", status: "Finalizado" },
-  { name: "Digital Commerce", url: "https://digital-commerce-hub-main.vercel.app", status: "Finalizado" },
-  { name: "Mi Turno Ya Reservado", url: "https://mi-turno-ya-reservado.vercel.app", status: "En desarrollo" },
-  { name: "Manda Factura", url: "https://manda-factura.vercel.app", status: "En desarrollo" },
-  { name: "Cancha Limpia", url: "https://cancha-limpia.vercel.app", status: "En desarrollo" },
-  { name: "La Banda Gaming", url: "https://la-banda-gaming.vercel.app", status: "En desarrollo" },
+  { name: "Bodegón Delicia", url: "https://bodegon-delicia-web.vercel.app"},
+  { name: "Digital Commerce", url: "https://digital-commerce-hub-main.vercel.app"},
+  { name: "Mi Turno Ya Reservado", url: "https://mi-turno-ya-reservado.vercel.app"},
+  { name: "Manda Factura", url: "https://manda-factura.vercel.app"},
+  { name: "Cancha Limpia", url: "https://cancha-limpia.vercel.app"},
+  { name: "La Banda Gaming", url: "https://la-banda-gaming.vercel.app"},
 ];
 
 export function Projects() {
@@ -129,9 +129,7 @@ export function Projects() {
                   height={832}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute top-3 left-3 z-20 glass-strong rounded-full px-2.5 py-1 text-[9px] font-mono uppercase tracking-wider">
-                  {p.available ? "Finalizado" : "En desarrollo"}
-                </div>
+
                 <div className="absolute top-3 right-3 z-20 glass-strong rounded-full p-2.5 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all">
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
