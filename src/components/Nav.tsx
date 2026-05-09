@@ -76,36 +76,29 @@ export function Nav() {
         </button>
       </div>
 
-      {/* Menú Mobile Desplegable (Alineado a la izquierda y mitad de ancho) */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            /* w-1/2: Mitad de ancho | items-start: Alineado a la izquierda */
-            className="lg:hidden mt-2 w-1/4 bg-black/95 backdrop-blur-2xl rounded-3xl p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden box-border"
-          >
-            <a
-              href="#top"
-              onClick={() => setOpen(false)}
-              className="text-sm text-white font-medium px-4 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
-            >
-              Inicio
-            </a>
-            {links.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="text-sm text-white/70 hover:text-white px-4 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
-              >
-                {l.label}
-              </a>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
+{/* Menú Mobile Desplegable */}
+<AnimatePresence>
+  {open && (
+    <motion.div
+      initial={{ opacity: 0, y: -8 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -8 }}
+      /* Usamos style={{ width: '50%' }} para forzar el ancho pase lo que pase */
+      style={{ width: '50%', minWidth: '160px' }} 
+      className="lg:hidden mt-2 bg-black/95 backdrop-blur-2xl rounded-3xl p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
+    >
+      <a href="#top" onClick={() => setOpen(false)} className="text-sm text-white px-4 py-3 w-full text-left rounded-2xl">
+        Inicio
+      </a>
+      {links.map((l) => (
+        <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm text-white/70 px-4 py-3 w-full text-left rounded-2xl">
+          {l.label}
+        </a>
+      ))}
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </motion.header>
   );
 }
