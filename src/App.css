@@ -1,0 +1,49 @@
+/* Variables de tu diseño original */
+:root {
+  --background: oklch(0.05 0.005 280);
+  --foreground: oklch(0.97 0.005 280);
+  --primary: oklch(0.65 0.22 295); /* Violeta */
+  --accent: oklch(0.78 0.14 200); /* Cyan */
+  --gold: oklch(0.82 0.14 85);
+  --glass: rgba(255, 255, 255, 0.03);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Clases de utilidad para que las uses en tus componentes */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.glow-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+}
