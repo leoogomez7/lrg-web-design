@@ -6,7 +6,7 @@ import logo from "@/assets/logo.png";
 const links = [
   { href: "#projects", label: "Ver proyectos" },
   { href: "#pricing", label: "Presupuestos" },
-  { href: "#proposals", label: "Propuestas realizadas" },
+  { href: "#proposals", label: "Propuestas" },
   { href: "#about", label: "¿Quién soy?" },
   { href: "#social", label: "Mis redes" },
   { href: "#contact", label: "Contactar" },
@@ -27,11 +27,12 @@ export function Nav() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      /* CAMBIO CLAVE: Usamos un ancho fijo de 90% en móvil para evitar que 'min' falle */
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[90%] lg:w-[min(94%,1120px)] ${
-        scrolled ? "max-w-[1040px]" : "max-w-[1120px]"
+      /* Ajustamos los porcentajes (92% y 90%) para que no toque los bordes físicos del celular */
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${
+        scrolled ? "w-[min(55%,1040px)]" : "w-[min(60%,1120px)]"
       }`}
     >
+      {/* Contenedor tipo Cápsula Negra */}
       <div className={`flex items-center justify-between gap-3 px-4 py-2 rounded-full border border-white/10 transition-all duration-500 ${
         scrolled 
           ? "bg-black/70 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.5)]" 
@@ -46,11 +47,18 @@ export function Nav() {
         </a>
 
         <nav className="hidden lg:flex items-center gap-1">
-          <a href="#top" className="text-[12px] text-white font-medium transition-colors px-4 py-2 rounded-full hover:bg-white/10">
+          <a
+            href="#top"
+            className="text-[12px] text-white font-medium transition-colors px-4 py-2 rounded-full hover:bg-white/10"
+          >
             Inicio
           </a>
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-[12px] text-white/70 hover:text-white transition-colors px-4 py-2 rounded-full hover:bg-white/10 whitespace-nowrap">
+            <a
+              key={l.href}
+              href={l.href}
+              className="text-[12px] text-white/70 hover:text-white transition-colors px-4 py-2 rounded-full hover:bg-white/10 whitespace-nowrap"
+            >
               {l.label}
             </a>
           ))}
@@ -66,20 +74,30 @@ export function Nav() {
         </button>
       </div>
 
+      {/* Menú Mobile Desplegable */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            /* IMPORTANTE: w-full y box-sizing asegurar que no desborde */
-            className="lg:hidden mt-2 w-full bg-black/90 backdrop-blur-2xl rounded-3xl p-2 flex flex-col border border-white/10 shadow-2xl overflow-hidden box-border"
+            /* w-full asegura que se alinee perfectamente con la cápsula de arriba */
+            className="lg:hidden mt-2 w-full bg-black/90 backdrop-blur-2xl rounded-4xl p-2 flex flex-col border border-white/10 shadow-2xl overflow-hidden"
           >
-            <a href="#top" onClick={() => setOpen(false)} className="text-sm text-white font-medium px-4 py-3 rounded-2xl hover:bg-white/10">
+            <a
+              href="#top"
+              onClick={() => setOpen(false)}
+              className="text-sm text-white font-medium px-4 py-3 rounded-2xl hover:bg-white/10"
+            >
               Inicio
             </a>
             {links.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm text-white/70 hover:text-white px-4 py-3 rounded-2xl hover:bg-white/10">
+              <a
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="text-sm text-white/70 hover:text-white px-4 py-3 rounded-2xl hover:bg-white/10"
+              >
                 {l.label}
               </a>
             ))}
