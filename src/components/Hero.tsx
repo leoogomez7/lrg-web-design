@@ -109,14 +109,6 @@ export function Hero() {
                 </div>
               </div>
             </div>
-
-            <div className="absolute -bottom-8 -left-8 glass-strong rounded-2xl p-4 w-48 animate-float" style={{ animationDelay: "1.5s" }}>
-              <div className="text-[10px] text-muted-foreground mb-1">Performance</div>
-              <div className="font-display text-2xl font-semibold text-gradient">98/100</div>
-              <div className="mt-2 h-1 rounded-full bg-white/10 overflow-hidden">
-                <div className="h-full w-[98%] bg-gradient-to-r from-violet to-cyan" />
-              </div>
-            </div>
           </div>
         </motion.div>
       </div>
