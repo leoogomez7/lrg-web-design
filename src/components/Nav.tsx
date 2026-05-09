@@ -84,7 +84,7 @@ export function Nav() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             /* w-1/2: Mitad de ancho | items-start: Alineado a la izquierda */
-            className="lg:hidden mt-2 w-1/2 bg-black/95 backdrop-blur-2xl rounded-3xl p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden box-border"
+            className="lg:hidden mt-2 w-1/4 bg-black/95 backdrop-blur-2xl rounded-3xl p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden box-border"
           >
             <a
               href="#top"
