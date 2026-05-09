@@ -82,7 +82,7 @@ export function Nav() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             /* w-full asegura que se alinee perfectamente con la cápsula de arriba */
-            className="lg:hidden mt-2 w-full bg-black/90 backdrop-blur-2xl rounded-[2rem] p-2 flex flex-col border border-white/10 shadow-2xl overflow-hidden"
+            className="lg:hidden mt-2 w-full bg-black/90 backdrop-blur-2xl rounded-4xl p-2 flex flex-col border border-white/10 shadow-2xl overflow-hidden"
           >
             <a
               href="#top"
