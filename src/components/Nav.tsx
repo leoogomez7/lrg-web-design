@@ -27,8 +27,8 @@ export function Nav() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      /* Responsivo: 92% en celular y max-width en PC */
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[92%] lg:w-[min(94%,1120px)] ${
+      /* Centrado estable: inset-x-0 + mx-auto evita errores de desborde en celular */
+      className={`fixed top-4 inset-x-0 mx-auto z-50 transition-all duration-500 w-[92%] lg:w-[min(94%,1120px)] ${
         scrolled ? "max-w-[1040px]" : "max-w-[1120px]"
       }`}
     >
@@ -46,7 +46,7 @@ export function Nav() {
           />
         </a>
 
-        {/* Menú PC */}
+        {/* Menú Escritorio */}
         <nav className="hidden lg:flex items-center gap-1">
           <a
             href="#top"
@@ -65,6 +65,7 @@ export function Nav() {
           ))}
         </nav>
 
+        {/* Botón Menú Mobile */}
         <button
           onClick={() => setOpen((v) => !v)}
           className="lg:hidden inline-flex items-center gap-2 h-9 px-4 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
@@ -75,21 +76,20 @@ export function Nav() {
         </button>
       </div>
 
-      {/* Menú Mobile Desplegable */}
+      {/* Menú Mobile Desplegable (Alineado a la izquierda y mitad de ancho) */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            /* items-start alinea los textos a la izquierda */
-            className="lg:hidden mt-2 w-full bg-black/95 backdrop-blur-2xl rounded-[2.5rem] p-3 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden box-border"
+            /* w-1/2: Mitad de ancho | items-start: Alineado a la izquierda */
+            className="lg:hidden mt-2 w-1/2 bg-black/95 backdrop-blur-2xl rounded-3xl p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden box-border"
           >
             <a
               href="#top"
               onClick={() => setOpen(false)}
-              /* w-full y text-left aseguran el alineado a la izquierda */
-              className="text-sm text-white font-medium px-5 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
+              className="text-sm text-white font-medium px-4 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
             >
               Inicio
             </a>
@@ -98,7 +98,7 @@ export function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-white/70 hover:text-white px-5 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
+                className="text-sm text-white/70 hover:text-white px-4 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
               >
                 {l.label}
               </a>
