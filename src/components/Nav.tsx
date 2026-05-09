@@ -6,8 +6,8 @@ import logo from "@/assets/logo.png";
 const links = [
   { href: "#projects", label: "Ver proyectos" },
   { href: "#pricing", label: "Presupuestos" },
-  { href: "#about", label: "¿Quién soy?" },
   { href: "#proposals", label: "Propuestas realizadas" },
+  { href: "#about", label: "¿Quién soy?" },
   { href: "#social", label: "Mis redes" },
   { href: "#contact", label: "Contactar" },
 ];
