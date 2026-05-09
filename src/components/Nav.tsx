@@ -27,8 +27,9 @@ export function Nav() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      /* Ajustamos los porcentajes (92% y 90%) para que no toque los bordes físicos del celular */
       className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${
-        scrolled ? "w-[min(94%,1040px)]" : "w-[min(96%,1120px)]"
+        scrolled ? "w-[min(90%,1040px)]" : "w-[min(92%,1120px)]"
       }`}
     >
       {/* Contenedor tipo Cápsula Negra */}
@@ -80,7 +81,8 @@ export function Nav() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="lg:hidden mt-2 bg-black/90 backdrop-blur-2xl rounded-3xl p-3 flex flex-col border border-white/10 shadow-2xl"
+            /* w-full asegura que se alinee perfectamente con la cápsula de arriba */
+            className="lg:hidden mt-2 w-full bg-black/90 backdrop-blur-2xl rounded-[2rem] p-2 flex flex-col border border-white/10 shadow-2xl overflow-hidden"
           >
             <a
               href="#top"
