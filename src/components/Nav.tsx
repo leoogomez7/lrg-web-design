@@ -27,9 +27,9 @@ export function Nav() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      /* Ajustamos los porcentajes (92% y 90%) para que no toque los bordes físicos del celular */
-      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${
-        scrolled ? "w-[min(55%,1040px)]" : "w-[min(60%,1120px)]"
+      /* Responsivo: 92% en celular y max-width en PC */
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 w-[92%] lg:w-[min(94%,1120px)] ${
+        scrolled ? "max-w-[1040px]" : "max-w-[1120px]"
       }`}
     >
       {/* Contenedor tipo Cápsula Negra */}
@@ -46,6 +46,7 @@ export function Nav() {
           />
         </a>
 
+        {/* Menú PC */}
         <nav className="hidden lg:flex items-center gap-1">
           <a
             href="#top"
@@ -81,13 +82,14 @@ export function Nav() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            /* w-full asegura que se alinee perfectamente con la cápsula de arriba */
-            className="lg:hidden mt-2 w-full bg-black/90 backdrop-blur-2xl rounded-4xl p-2 flex flex-col border border-white/10 shadow-2xl overflow-hidden"
+            /* items-start alinea los textos a la izquierda */
+            className="lg:hidden mt-2 w-full bg-black/95 backdrop-blur-2xl rounded-[2.5rem] p-3 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden box-border"
           >
             <a
               href="#top"
               onClick={() => setOpen(false)}
-              className="text-sm text-white font-medium px-4 py-3 rounded-2xl hover:bg-white/10"
+              /* w-full y text-left aseguran el alineado a la izquierda */
+              className="text-sm text-white font-medium px-5 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
             >
               Inicio
             </a>
@@ -96,7 +98,7 @@ export function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-white/70 hover:text-white px-4 py-3 rounded-2xl hover:bg-white/10"
+                className="text-sm text-white/70 hover:text-white px-5 py-3 rounded-2xl hover:bg-white/10 w-full text-left"
               >
                 {l.label}
               </a>
