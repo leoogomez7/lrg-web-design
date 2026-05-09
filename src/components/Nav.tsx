@@ -66,7 +66,7 @@ export function Nav() {
           onClick={() => setOpen((v) => !v)}
           className="lg:hidden inline-flex items-center gap-1.5 h-8 px-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
         >
-          {open ? <X className="w-3.5 h-3.5" /> : <Menu className="w-3.5 h-3.5" />}
+          {open ? <X className="w-1.5 h-1.5" /> : <Menu className="w-3.5 h-3.5" />}
           <span className="text-[10px] font-medium">Menú</span>
         </button>
       </div>
