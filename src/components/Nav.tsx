@@ -31,8 +31,8 @@ export function Nav() {
          CAMBIO CLAVE: quitamos mx-auto y añadimos left-4.
          Ahora el menú se pega a la izquierda con un pequeño margen.
       */
-      className={`fixed top-4 left-4 z-50 transition-all duration-500 w-[65%] lg:left-1/2 lg:-translate-x-1/2 lg:w-[min(94%,1120px)] ${
-        scrolled ? "max-w-[1040px]" : "max-w-[1120px]"
+      className={`fixed top-4 left-4 z-50 transition-all duration-500 w-[50%] lg:left-1/2 lg:-translate-x-1/2 lg:w-[min(94%,1120px)] ${
+        scrolled ? "max-w-[840px]" : "max-w-[920px]"
       }`}
     >
       {/* Contenedor tipo Cápsula Negra */}
