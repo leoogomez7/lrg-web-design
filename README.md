@@ -1,0 +1,93 @@
+# 🎨 LRG Web Design
+
+**LRG Web Design** es una plataforma moderna dedicada al diseño y desarrollo web profesional. El proyecto expone un portafolio de servicios, metodologías de trabajo digitales y soluciones optimizadas para una experiencia de usuario (UX) ágil, interactiva y de alto rendimiento.
+
+🌐 **Sitio Web Oficial:** [lrg-web-design.vercel.app](https://lrg-web-design.vercel.app)
+
+---
+
+# 🚀 ¿Qué es LRG Web Design?
+
+Esta plataforma funciona como la identidad comercial y el portafolio digital del estudio. Está diseñada estratégicamente para maximizar la conversión de clientes, la velocidad de carga y la adaptabilidad móvil a través de las siguientes características fundamentales:
+
+* **Optimización de Conversión**: Estructura orientada a presentar servicios de diseño de manera clara, facilitando la retención de usuarios y el contacto directo.
+* **Rendimiento UI Excepcional**: Renderizado inmediato de elementos visuales dinámicos e interactivos sin penalizar la velocidad de carga gracias a componentes optimizados.
+* **Enfoque Mobile-First**: Adaptabilidad fluida en cualquier tamaño de pantalla, asegurando una navegación intuitiva tanto en ordenadores como en dispositivos móviles.
+* **Infraestructura Edge**: Servido globalmente a través de redes perimetrales distribuidas, lo que garantiza tiempos de respuesta mínimos e inmunidad frente a picos de tráfico.
+
+---
+
+# 🛠️ Stack Tecnológico
+
+El proyecto está construido bajo una infraestructura ágil, modular y de tipado seguro para garantizar que el mantenimiento del diseño interactivo sea rápido y libre de errores semánticos.
+
+### Tecnologías Core (Frontend)
+* **TypeScript (95%+)**: Tipado estricto en toda la lógica del cliente para evitar fallos de ejecución.
+* **Vite.js (`vite.config.ts`)**: Servidor de desarrollo instantáneo y empaquetador basado en ESM para la máxima velocidad.
+* **Componentes UI (`components.json`)**: Arquitectura de interfaz basada en primitivas de **shadcn/ui** integradas con **Tailwind CSS**.
+
+### Motor de Dependencias
+* **Bun (`bunfig.toml` / `bun.lock`)**: Herramienta principal elegida como gestor de paquetes por su óptima velocidad de instalación.
+* **Node.js / NPM (`package.json`)**: Configuración base y scripts de ciclo de vida del desarrollo nativo.
+
+### Control de Calidad
+* **ESLint (`eslint.config.js`)**: Configuración estricta de análisis estático de código según los estándares modernos de TypeScript.
+* **Prettier (`.prettierrc`)**: Reglas unificadas para el autoformateo de estilos, layouts y sangrías en los componentes.
+
+### Infraestructura Cloud (Externas)
+* **Vercel Edge Network (`vercel.json`)**: Hosting principal optimizado para despliegues continuos globales con compresión automática en servidores perimetrales.
+* **Cloudflare Workers (`wrangler.jsonc`)**: Configuración integrada para lógica sin servidor (*Serverless*), permitiendo el manejo ágil de redirecciones o microservicios desde el Edge.
+
+---
+
+# ⚙️ Requisitos Previos
+
+Necesitas tener instalado **Bun** en tu entorno local:
+
+```bash
+# Comando de instalación (macOS/Linux/WSL)
+curl -fsSL https://bun.sh | bash
+```
+
+---
+
+# 🚀 Instalación y Uso Local
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com
+   cd lrg-web-design
+   ```
+
+2. **Instalar dependencias:**
+   ```bash
+   bun install
+   ```
+
+3. **Ejecutar el servidor local:**
+   ```bash
+   bun run dev
+   ```
+
+4. **Compilar el sitio para producción:**
+   ```bash
+   bun run build
+   ```
+
+---
+
+# 📁 Estructura del Proyecto
+
+```bash
+├── public/              # Recursos estáticos (logos, iconos, vectores)
+├── src/                 # Código fuente de las vistas y componentes de diseño
+├── .gitignore           # Exclusiones de control de versiones
+├── .prettierrc          # Reglas del formateador estético
+├── components.json      # Configuración de diseño UI unificado
+├── eslint.config.js     # Reglas de validación del linter
+├── index.html           # Archivo raíz HTML5
+├── tsconfig.json        # Configuración del compilador TypeScript
+├── vercel.json          # Reglas de distribución y headers en Vercel
+├── vite.config.ts       # Configuración del entorno de construcción Vite
+└── wrangler.jsonc       # Configuración perimetral de Cloudflare Pages/Workers
+```
