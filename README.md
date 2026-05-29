@@ -40,19 +40,6 @@ El proyecto está construido bajo una infraestructura ágil, modular y de tipado
 - **Cloudflare Workers (`wrangler`)**: Configuración perimetral para lógica Serverless y enrutamiento rápido en el Edge.
 - **Vercel Edge Network**: Distribución global del frontend con compresión automática y tiempos de carga mínimos.
 
-
-### Motor de Dependencias
-* **Bun (`bunfig.toml` / `bun.lock`)**: Herramienta principal elegida como gestor de paquetes por su óptima velocidad de instalación.
-* **Node.js / NPM (`package.json`)**: Configuración base y scripts de ciclo de vida del desarrollo nativo.
-
-### Control de Calidad
-* **ESLint (`eslint.config.js`)**: Configuración estricta de análisis estático de código según los estándares modernos de TypeScript.
-* **Prettier (`.prettierrc`)**: Reglas unificadas para el autoformateo de estilos, layouts y sangrías en los componentes.
-
-### Infraestructura Cloud (Externas)
-* **Vercel Edge Network (`vercel.json`)**: Hosting principal optimizado para despliegues continuos globales con compresión automática en servidores perimetrales.
-* **Cloudflare Workers (`wrangler.jsonc`)**: Configuración integrada para lógica sin servidor (*Serverless*), permitiendo el manejo ágil de redirecciones o microservicios desde el Edge.
-
 ---
 
 # ⚙️ Requisitos Previos
