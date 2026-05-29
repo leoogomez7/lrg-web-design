@@ -22,9 +22,24 @@ Esta plataforma funciona como la identidad comercial y el portafolio digital del
 El proyecto está construido bajo una infraestructura ágil, modular y de tipado seguro para garantizar que el mantenimiento del diseño interactivo sea rápido y libre de errores semánticos.
 
 ### Tecnologías Core (Frontend)
-* **TypeScript (95%+)**: Tipado estricto en toda la lógica del cliente para evitar fallos de ejecución.
-* **Vite.js (`vite.config.ts`)**: Servidor de desarrollo instantáneo y empaquetador basado en ESM para la máxima velocidad.
-* **Componentes UI (`components.json`)**: Arquitectura de interfaz basada en primitivas de **shadcn/ui** integradas con **Tailwind CSS**.
+### Frontend & UI
+- **React.js & TypeScript**: Lógica de cliente robusta, escalable y libre de errores en tiempo de compilación.
+- **Vite.js**: Servidor de desarrollo instantáneo y compilación optimizada para producción.
+- **Tailwind CSS**: Estructura de diseño fluida y Mobile-First para garantizar adaptabilidad móvil.
+- **shadcn/ui**: Sistema de diseño consistente mediante componentes modulares.
+
+### Entorno de Ejecución & Dependencias
+- **Bun**: Gestor de paquetes y motor de ejecución elegido por su alta velocidad de instalación.
+- **Node.js & NPM**: Base estándar del ecosistema para la ejecución de scripts.
+
+### Calidad de Código
+- **ESLint**: Linter modular configurado con reglas estrictas de desarrollo moderno.
+- **Prettier**: Control estético automatizado para layouts, sangrías y estilos limpios.
+
+### Infraestructura & Cloud
+- **Cloudflare Workers (`wrangler`)**: Configuración perimetral para lógica Serverless y enrutamiento rápido en el Edge.
+- **Vercel Edge Network**: Distribución global del frontend con compresión automática y tiempos de carga mínimos.
+
 
 ### Motor de Dependencias
 * **Bun (`bunfig.toml` / `bun.lock`)**: Herramienta principal elegida como gestor de paquetes por su óptima velocidad de instalación.
