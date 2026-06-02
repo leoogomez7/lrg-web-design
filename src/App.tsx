@@ -3,7 +3,7 @@ import './App.css';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
-import Clients from './components/Clients'; // <-- Importación del nuevo componente de clientes
+import Clients from './components/Clients';
 import { Pricing } from './components/Pricing';
 import { Proposals } from './components/Proposals';
 import { About } from './components/About';

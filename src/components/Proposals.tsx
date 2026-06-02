@@ -39,7 +39,7 @@ export function Proposals() {
     <section id="proposals" className="relative py-20 px-6">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <SectionLabel>03 — Propuestas realizadas</SectionLabel>
+          <SectionLabel>04 — Propuestas realizadas</SectionLabel>
           <h2 className="font-display text-4xl md:text-6xl font-semibold mt-4 tracking-tight">
             Planes de <span className="text-gradient">Transformación Digital</span>
           </h2>

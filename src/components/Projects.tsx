@@ -179,7 +179,7 @@ export function Projects() {
               Listado completo
             </div>
             <h3 className="font-display text-2xl md:text-3xl font-semibold tracking-tight mt-2">
-              Todas mis páginas web
+              Todos mis proyectos
             </h3>
           </div>
           <div className="divide-y divide-border">
@@ -190,9 +190,6 @@ export function Projects() {
               >
                 <div className="min-w-0 flex-1">
                   <div className="font-medium truncate">{s.name}</div>
-                  <div className="text-[11px] font-mono uppercase tracking-wider text-muted-foreground mt-0.5">
-                    {s.status}
-                  </div>
                 </div>
                 <a
                   href={s.url}

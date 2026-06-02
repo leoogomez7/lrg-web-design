@@ -10,7 +10,7 @@ export function Contact() {
 
       <div className="relative mx-auto max-w-5xl">
         <div className="text-center mb-12">
-          <SectionLabel>05 — Contacto</SectionLabel>
+          <SectionLabel>06 — Contacto</SectionLabel>
         </div>
 
         <motion.div

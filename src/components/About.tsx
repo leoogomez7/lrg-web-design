@@ -18,7 +18,7 @@ export function About() {
   return (
     <section id="about" className="relative py-20 px-6">
       <div className="mx-auto max-w-7xl">
-        <SectionLabel>04 — Sobre mí</SectionLabel>
+        <SectionLabel>05 — Sobre mí</SectionLabel>
 
         <div className="grid lg:grid-cols-[1fr_1.3fr] gap-16 mt-10">
           <motion.div

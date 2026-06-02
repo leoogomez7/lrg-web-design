@@ -107,7 +107,7 @@ export function Pricing() {
     <section id="pricing" className="relative py-20 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-12">
-          <SectionLabel>02 — Presupuestos</SectionLabel>
+          <SectionLabel>03 — Presupuestos</SectionLabel>
           <h2 className="font-display text-4xl md:text-6xl font-semibold mt-4 tracking-tight">
             Inversión <span className="text-gradient">transparente</span>
           </h2>
