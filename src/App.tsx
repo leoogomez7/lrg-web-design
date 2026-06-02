@@ -3,6 +3,7 @@ import './App.css';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
+import Clients from './components/Clients'; // <-- Importación del nuevo componente de clientes
 import { Pricing } from './components/Pricing';
 import { Proposals } from './components/Proposals';
 import { About } from './components/About';
@@ -21,24 +22,27 @@ function App() {
         
         {/* 3. Portafolio de Proyectos */}
         <Projects />
+
+        {/* 4. Apartado de Clientes */}
+        <Clients />
         
-        {/* 4. Tabla de Precios */}
+        {/* 5. Tabla de Precios */}
         <Pricing />
         
-        {/* 5. Propuestas/Servicios */}
+        {/* 6. Propuestas/Servicios */}
         <Proposals />
         
-        {/* 6. Sobre mí */}
+        {/* 7. Sobre mí */}
         <About />
         
-        {/* 7. Redes Sociales */}
+        {/* 8. Redes Sociales */}
         <Social />
         
-        {/* 8. Formulario de Contacto */}
+        {/* 9. Formulario de Contacto */}
         <Contact />
       </main>
 
-      {/* 9. Pie de página */}
+      {/* 10. Pie de página */}
       <Footer />
     </div>
   );
