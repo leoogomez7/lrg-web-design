@@ -37,11 +37,11 @@ export default function Clients() {
   // AGREGADO: Estado para controlar qué imagen se muestra (0 = Web, 1 = Reseña)
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // AGREGADO: Temporizador cíclico de 3 segundos
+  // AGREGADO: Temporizador cíclico de 2 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
