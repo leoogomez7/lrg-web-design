@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExternalLink, MousePointerClick } from 'lucide-react';
+import dynimage from "@/assets/dyn.jpg";
 
 interface Project {
   name: string;
@@ -18,7 +19,7 @@ export default function Projects() {
       name: "D&N Estudio Jurídico",
       type: "Web Institucional - Landing Page",
       url: "https://dyn-estudio-juridico.vercel.app",
-      image: "/src/assets/dyn.jpg", 
+      image: dynimage, 
       description: "Plataforma web corporativa con sistema de asesoramiento, presentación de áreas de práctica especializada y un canal directo de contacto para resolver consultas legales.",
       tech: ["React", "Tailwind CSS", "Vite", "Vercel"],
       accent: "from-amber-500/20 via-amber-600/5 to-transparent",
