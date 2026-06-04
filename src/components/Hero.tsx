@@ -56,6 +56,13 @@ export function Hero() {
               Ver proyectos
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
+                        <a
+              href="#clients"
+              className="group inline-flex items-center gap-2 bg-foreground text-background px-6 py-3.5 rounded-full text-sm font-medium hover:scale-[1.02] transition-transform"
+            >
+              Clientes satisfechos
+              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 glass-strong px-6 py-3.5 rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
