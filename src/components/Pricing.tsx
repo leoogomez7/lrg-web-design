@@ -88,9 +88,9 @@ const webTypes = [
 ];
 
 const maintenancePlans = [
-  { name: "Esencial", mods: "Hasta 4 modificaciones sencillas / mes", price: "$25.000" },
-  { name: "Avanzado", mods: "4 modificaciones avanzadas / mes", price: "$32.000", highlight: true },
-  { name: "Pro", mods: "10 modificaciones / mes", price: "$47.000" },
+  { name: "Esencial", mods: "Hasta 4 modificaciones sencillas / mes. Influye la carga de módulos y la complejidad del sistema.", price: "Desde $25.000" },
+  { name: "Avanzado", mods: "4 modificaciones avanzadas / mes. Influye la carga de módulos y la complejidad del sistema.", price: "Desde $32.000", highlight: true },
+  { name: "Pro", mods: "10 modificaciones / mes. Influye la carga de módulos y la complejidad del sistema.", price: "Desde $47.000" },
 ];
 
 const maintenanceIncluded = [
