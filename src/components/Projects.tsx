@@ -32,26 +32,26 @@ const projects = [
     available: true,
   },
   {
-    name: "Mi Turno Ya Reservado",
-    type: "Turnos de Citas Médicas - En desarrollo",
+    name: "Mi Turno Ya",
+    type: "Turnos de Citas Médicas - Finalizado",
     url: "https://mi-turno-ya-reservado.vercel.app",
     image: medicalImg,
     description:
-      "Plataforma de gestión de turnos médicos online. Permite reservar, modificar y cancelar citas con profesionales de la salud en pocos clics.",
+      "Plataforma de gestión de turnos online. Permite reservar, modificar y cancelar citas con profesionales en pocos clics.",
     tech: ["Next.js", "Tailwind", "React", "Vercel"],
     accent: "from-cyan/40 to-violet/20",
-    available: false,
+    available: true,
   },
   {
-    name: "Manda Factura",
-    type: "Generador de Facturas / Recibos - En desarrollo",
-    url: "https://manda-factura.vercel.app",
+    name: "Manda Remito",
+    type: "Generador de Remitos - Finalizado",
+    url: "https://manda-remito.vercel.app",
     image: invoiceImg,
     description:
-      "Generador simple de facturas y recibos con logos e información de la empresa. Exportable y listo para enviar al cliente.",
+      "Generador simple de remitos con logos e información de la empresa. Exportable y listo para enviar al cliente.",
     tech: ["Next.js", "Tailwind", "React", "Vercel"],
     accent: "from-gold/40 to-amber-500/20",
-    available: false,
+    available: true,
   },
   {
     name: "Cancha Limpia",
@@ -66,22 +66,22 @@ const projects = [
   },
   {
     name: "La Banda Gaming",
-    type: "Simulador de Torneos Gaming - En desarrollo",
+    type: "Simulador de Torneos Gaming - Finalizado",
     url: "https://la-banda-gaming.vercel.app",
     image: gamingImg,
     description:
-      "Simulador de torneos gaming entre amigos para PlayStation y competencias. Brackets, llaves y resultados en tiempo real.",
+      "Simulador de torneos gaming entre amigos para PlayStation y competencias. Ligas, grupos, llaves y resultados en tiempo real.",
     tech: ["Next.js", "Tailwind", "React", "Vercel"],
     accent: "from-violet/40 to-pink-500/20",
-    available: false,
+    available: true,
   },
 ];
 
 const allSites = [
   { name: "Bodegón Delicia", url: "https://bodegon-delicia-web.vercel.app"},
   { name: "Digital Commerce", url: "https://digital-commerce-hub-main.vercel.app"},
-  { name: "Mi Turno Ya Reservado", url: "https://mi-turno-ya-reservado.vercel.app"},
-  { name: "Manda Factura", url: "https://manda-factura.vercel.app"},
+  { name: "Mi Turno Ya", url: "https://mi-turno-ya-reservado.vercel.app"},
+  { name: "Manda Remito", url: "https://manda-remito.vercel.app"},
   { name: "Cancha Limpia", url: "https://cancha-limpia.vercel.app"},
   { name: "La Banda Gaming", url: "https://la-banda-gaming.vercel.app"},
 ];
