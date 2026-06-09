@@ -33,7 +33,7 @@ const projects = [
   },
   {
     name: "Mi Turno Ya",
-    type: "Turnos de Citas Médicas - Finalizado",
+    type: "Reservación de turnos - Finalizado",
     url: "https://mi-turno-ya-reservado.vercel.app",
     image: medicalImg,
     description:
