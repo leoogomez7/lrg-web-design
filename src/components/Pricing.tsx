@@ -62,7 +62,7 @@ const webTypes = [
     subtitle: "Web Informativa",
     price: "Desde $100.000",
     for: "Restaurantes, negocios y empresas",
-    ref: "Similar a http://bodegon-delicia-web.vercel.app & http://dyn-estudio-juridico.vercel.app",
+    ref: "Similar a bodegon-delicia-web.vercel.app & dyn-estudio-juridico.vercel.app",
   },
   {
     icon: LayoutDashboard,
@@ -70,7 +70,7 @@ const webTypes = [
     subtitle: "Panel de Administración",
     price: "Desde $190.000",
     for: "Emprendedores · Control de ventas, stock y clientes · Remitos y facturación",
-    ref: "Similar a http://digital-commerce-hub-main.vercel.app & http://manda-remito.vercel.app",
+    ref: "Similar a digital-commerce-hub-main.vercel.app & manda-remito.vercel.app",
   },
   {
     icon: CalendarCheck,
@@ -78,7 +78,7 @@ const webTypes = [
     subtitle: "Plataforma de Reservas",
     price: "Desde $180.000",
     for: "Barberos, peluqueros, manicuristas, consultorios",
-        ref: "Similar a http://mi-turno-ya-reservado.vercel.app",
+        ref: "Similar a mi-turno-ya-reservado.vercel.app",
   },
   {
     icon: ShoppingBag,
@@ -94,7 +94,7 @@ const webTypes = [
     subtitle: "Gestor de Torneos y Estadísticas",
     price: "Desde $200.000",
     for: "Organizadores de torneos, clubes de barrio, ligas de FIFA/COUNTER STRIKE, comunidades de gaming, torneos de carreras - tenis - fútbol - shooter",
-    ref: "Similar a http://la-banda-gaming.vercel.app & http://ficha-player.vercel.app", 
+    ref: "Similar a la-banda-gaming.vercel.app & ficha-player.vercel.app", 
   }
 
 ];
