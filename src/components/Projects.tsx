@@ -55,7 +55,7 @@ const projects = [
   },
   {
     name: "Ficha Player",
-    type: "Estadísticas de Jugadores - Finalizado",
+    type: "Estadísticas de Jugadores - En desarrollo",
     url: "https://ficha-player.vercel.app",
     image: statsImg,
     description:
