@@ -54,15 +54,15 @@ const projects = [
     available: true,
   },
   {
-    name: "Cancha Limpia",
-    type: "Estadísticas de Jugadores - En desarrollo",
-    url: "https://cancha-limpia.vercel.app",
+    name: "Ficha Player",
+    type: "Estadísticas de Jugadores - Finalizado",
+    url: "https://ficha-player.vercel.app",
     image: statsImg,
     description:
       "Plataforma de estadísticas para partidos entre amigos: goles, asistencias, goles en contra, partidos ganados, perdidos, empatados y equipos asignados.",
     tech: ["Next.js", "Tailwind", "React", "Vercel"],
     accent: "from-emerald-500/30 to-cyan/20",
-    available: false,
+    available: true,
   },
   {
     name: "La Banda Gaming",
@@ -82,14 +82,14 @@ const allSites = [
   { name: "Digital Commerce", url: "https://digital-commerce-hub-main.vercel.app"},
   { name: "Mi Turno Ya", url: "https://mi-turno-ya-reservado.vercel.app"},
   { name: "Manda Remito", url: "https://manda-remito.vercel.app"},
-  { name: "Cancha Limpia", url: "https://cancha-limpia.vercel.app"},
+  { name: "Ficha Player", url: "https://ficha-player.vercel.app"},
   { name: "La Banda Gaming", url: "https://la-banda-gaming.vercel.app"},
 ];
 
 export function Projects() {
   return (
     <section id="projects" className="relative py-20 px-6">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-violet/5 blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 .w-[800px] .h-[800px] rounded-full bg-violet/5 blur-[150px] pointer-events-none" />
 
       <div className="mx-auto max-w-7xl relative">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
@@ -119,8 +119,8 @@ export function Projects() {
               transition={{ duration: 0.8, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="group relative glass rounded-3xl overflow-hidden hover:border-accent/30 transition-all"
             >
-              <div className="relative aspect-[16/10] overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-br ${p.accent} opacity-50 group-hover:opacity-30 transition-opacity z-10 mix-blend-overlay`} />
+              <div className="relative .aspect-[16/10] overflow-hidden">
+                <div className={`absolute inset-0 .bg-gradient-to-br ${p.accent} opacity-50 group-hover:opacity-30 transition-opacity z-10 mix-blend-overlay`} />
                 <img
                   src={p.image}
                   alt={p.name}
@@ -186,7 +186,7 @@ export function Projects() {
             {allSites.map((s) => (
               <div
                 key={s.name}
-                className="flex items-center justify-between gap-4 px-6 md:px-8 py-4 hover:bg-white/[0.03] transition-colors"
+                className="flex items-center justify-between gap-4 px-6 md:px-8 py-4 hover:bg-white/0.03 transition-colors"
               >
                 <div className="min-w-0 flex-1">
                   <div className="font-medium truncate">{s.name}</div>
@@ -195,10 +195,10 @@ export function Projects() {
                   href={s.url}
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium hover:bg-white/[0.08] hover:border-accent/40 transition-all shrink-0"
+                  className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium hover:bg-white/0.08 hover:border-accent/40 transition-all shrink-0"
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
-                  Ver proyecto
+                  Ver Página Web
                 </a>
               </div>
             ))}

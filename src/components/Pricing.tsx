@@ -19,6 +19,7 @@ import {
   Sparkles,
   Info,
   Settings2,
+  Trophy,
 } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
 
@@ -61,15 +62,15 @@ const webTypes = [
     subtitle: "Web Informativa",
     price: "Desde $100.000",
     for: "Restaurantes, negocios y empresas",
-    ref: "Similar a bodegon-delicia-web.vercel.app",
+    ref: "Similar a http://bodegon-delicia-web.vercel.app & http://dyn-estudio-juridico.vercel.app",
   },
   {
     icon: LayoutDashboard,
     title: "Dashboard",
     subtitle: "Panel de Administración",
     price: "Desde $190.000",
-    for: "Emprendedores · Control de ventas, stock y clientes",
-    ref: "Similar a digital-commerce-hub-main.vercel.app",
+    for: "Emprendedores · Control de ventas, stock y clientes · Remitos y facturación",
+    ref: "Similar a http://digital-commerce-hub-main.vercel.app & http://manda-remito.vercel.app",
   },
   {
     icon: CalendarCheck,
@@ -77,6 +78,7 @@ const webTypes = [
     subtitle: "Plataforma de Reservas",
     price: "Desde $180.000",
     for: "Barberos, peluqueros, manicuristas, consultorios",
+        ref: "Similar a http://mi-turno-ya-reservado.vercel.app",
   },
   {
     icon: ShoppingBag,
@@ -85,6 +87,16 @@ const webTypes = [
     price: "Desde $410.000",
     for: "Tiendas, negocios, kioscos, emprendedores",
   },
+
+  {
+    icon: Trophy,
+    title: "Esports & Tournaments",
+    subtitle: "Gestor de Torneos y Estadísticas",
+    price: "Desde $200.000",
+    for: "Organizadores de torneos, clubes de barrio, ligas de FIFA/COUNTER STRIKE, comunidades de gaming, torneos de carreras - tenis - fútbol - shooter",
+    ref: "Similar a http://la-banda-gaming.vercel.app & http://ficha-player.vercel.app", 
+  }
+
 ];
 
 const maintenancePlans = [
@@ -167,7 +179,7 @@ export function Pricing() {
                         className="flex items-center gap-3 text-sm text-muted-foreground"
                       >
                         <Check
-                          className={`w-4 h-4 flex-shrink-0 ${
+                          className={`w-4 h-4 .flex-shrink-0 ${
                             isGold ? "text-gold" : "text-accent"
                           }`}
                         />
