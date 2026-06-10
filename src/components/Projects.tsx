@@ -62,7 +62,7 @@ const projects = [
       "Plataforma de estadísticas para partidos entre amigos: goles, asistencias, goles en contra, partidos ganados, perdidos, empatados y equipos asignados.",
     tech: ["Next.js", "Tailwind", "React", "Vercel"],
     accent: "from-emerald-500/30 to-cyan/20",
-    available: true,
+    available: false,
   },
   {
     name: "La Banda Gaming",
