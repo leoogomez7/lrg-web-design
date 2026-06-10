@@ -46,8 +46,8 @@ export function About() {
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
               { v: "+6", l: "Proyectos" },
+              { v: "+1", l: "Clientes satisfechos" },
                 { v: "2", l: "Años de exp." },
-                { v: "100%", l: "Profesional" },
               ].map((s) => (
                 <div key={s.l} className="glass rounded-xl p-4">
                   <div className="font-display text-2xl font-semibold text-gradient">{s.v}</div>
