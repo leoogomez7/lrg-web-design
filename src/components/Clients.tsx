@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MousePointerClick , ExternalLink} from 'lucide-react';
 import dynimage from "@/assets/dyn.jpg";
+import clientPlaceholder from "@/assets/client-placeholder.svg";
+import reviewPending from "@/assets/review-pending.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionLabel } from "./SectionLabel";
 import reviewImage from "@/assets/opinion-dyn.jpeg";
@@ -31,6 +33,17 @@ export default function Clients() {
       accent: "from-amber-500/20 via-amber-600/5 to-transparent",
       budgetUrl: "https://drive.google.com/file/d/1exN4b1llXtnUtzMrR_0J9J80ddBIoqLr/view?usp=drivesdk",
       reviewImageUrl: reviewImage
+    },
+    {
+      name: "Wilson Arquitectura",
+      type: "Web Institucional - Arquitectura",
+      url: "https://wilson-seven-beryl.vercel.app",
+      image: clientPlaceholder,
+      description: "Sitio web institucional para el estudio de arquitectura con enfoque en proyectos residenciales y comerciales. Diseño moderno, enlaces directos a portafolio y contacto optimizado.",
+      tech: ["React", "Tailwind CSS", "Vite", "Vercel"],
+      accent: "from-sky-500/20 via-sky-600/5 to-transparent",
+      budgetUrl: "https://drive.google.com/file/d/1UJtskcJ5IwhUZ1ss2Y6DipnEZ-zEiYzM/view?usp=sharing",
+      reviewImageUrl: reviewPending
     }
   ];
 

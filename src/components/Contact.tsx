@@ -18,7 +18,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="glass-strong rounded-[2rem] p-10 md:p-16 text-center relative overflow-hidden"
+          className="glass-strong .rounded-[2rem] p-10 md:p-16 text-center relative overflow-hidden"
         >
           <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-violet/30 blur-[120px]" />
           <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-cyan/20 blur-[120px]" />
@@ -39,7 +39,7 @@ export function Contact() {
                 rel="noreferrer noopener"
                 className="group glass rounded-2xl p-5 text-left flex items-center gap-4 hover:border-accent/40 transition-all"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/30 to-emerald-500/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl .bg-gradient-to-br from-green-500/30 to-emerald-500/20 flex items-center justify-center">
                   <MessageCircle className="w-5 h-5 text-green-400" />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -53,7 +53,7 @@ export function Contact() {
                 href="mailto:leorgomez7@gmail.com"
                 className="group glass rounded-2xl p-5 text-left flex items-center gap-4 hover:border-accent/40 transition-all"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet/30 to-cyan/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl .bg-gradient-to-br from-violet/30 to-cyan/20 flex items-center justify-center">
                   <Mail className="w-5 h-5 text-accent" />
                 </div>
                 <div className="flex-1 min-w-0">

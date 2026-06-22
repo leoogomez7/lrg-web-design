@@ -5,7 +5,7 @@ import dashboardImg from "@/assets/project-dashboard.jpg";
 import restaurantImg from "@/assets/project-restaurant.jpg";
 import medicalImg from "@/assets/project-medical.jpg";
 import invoiceImg from "@/assets/project-invoice.jpg";
-import statsImg from "@/assets/project-stats.jpg";
+import statsImg from "@/assets/project-ecommerce.jpg";
 import gamingImg from "@/assets/project-gaming.jpg";
 
 const projects = [
@@ -54,15 +54,15 @@ const projects = [
     available: true,
   },
   {
-    name: "Ficha Player",
-    type: "Estadísticas de Jugadores - En desarrollo",
-    url: "https://ficha-player.vercel.app",
+    name: "Revendedor Digital",
+    type: "Tienda Ecommerce - Finalizado",
+    url: "https://web-products-amber.vercel.app",
     image: statsImg,
     description:
-      "Plataforma de estadísticas para partidos entre amigos: goles, asistencias, goles en contra, partidos ganados, perdidos, empatados y equipos asignados.",
+      "Plataforma e-commerce multi-proveedor donde los usuarios pueden registrarse, publicar y vender sus propios productos y servicios.",
     tech: ["Next.js", "Tailwind", "React", "Vercel"],
     accent: "from-emerald-500/30 to-cyan/20",
-    available: false,
+    available: true,
   },
   {
     name: "La Banda Gaming",
@@ -82,7 +82,7 @@ const allSites = [
   { name: "Digital Commerce", url: "https://digital-commerce-hub-main.vercel.app"},
   { name: "Mi Turno Ya", url: "https://mi-turno-ya-reservado.vercel.app"},
   { name: "Manda Remito", url: "https://manda-remito.vercel.app"},
-  { name: "Ficha Player", url: "https://ficha-player.vercel.app"},
+  { name: "Revendedor Digital", url: "https://web-products-amber.vercel.app"},
   { name: "La Banda Gaming", url: "https://la-banda-gaming.vercel.app"},
 ];
 
