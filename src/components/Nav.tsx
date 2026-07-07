@@ -33,7 +33,7 @@ export function Nav() {
          Ahora el menú se pega a la izquierda con un pequeño margen.
       */
       className={`fixed top-4 inset-x-0 mx-auto z-50 transition-all duration-500 w-[90%] max-w-full box-border lg:w-[min(94%,1120px)] ${
-        scrolled ? "max-w-[1040px]" : "max-w-[1120px]"
+        scrolled ? ".max-w-[1040px]" : ".max-w-[1120px]"
       }`}
     >
       {/* Contenedor tipo Cápsula Negra */}
@@ -80,7 +80,7 @@ export function Nav() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             /* Alineado a la izquierda del header */
-            className="lg:hidden mt-2 w-full bg-black/95 backdrop-blur-2xl rounded-[2rem] p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
+            className="lg:hidden mt-2 w-full bg-black/95 backdrop-blur-2xl .rounded-[2rem] p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
           >
             <a
               href="#top"

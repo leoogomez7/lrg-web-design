@@ -97,7 +97,7 @@ export function Proposals() {
             href={DRIVE_URL}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center gap-2 glass rounded-full px-6 py-3 text-sm font-medium hover:bg-white/[0.06] transition-colors"
+            className="inline-flex items-center gap-2 glass rounded-full px-6 py-3 text-sm font-medium .hover:bg-white/[0.06] transition-colors"
           >
             <FolderOpen className="w-4 h-4 text-accent" />
             Ver todas las propuestas en Drive

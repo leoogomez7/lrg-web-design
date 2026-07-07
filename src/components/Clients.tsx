@@ -37,8 +37,8 @@ export default function Clients() {
     },
     {
       name: "Wilson Arquitectura",
-      type: "Web Institucional - Arquitectura",
-      url: "https://wilson-seven-beryl.vercel.app",
+      type: "Web Institucional - Landing Page",
+      url: "https://wilsonarquitectura.com.ar",
       image: wilson_web,
       description: "Sitio web institucional para el estudio de arquitectura con enfoque en proyectos residenciales y comerciales. Diseño moderno, enlaces directos a portafolio y contacto optimizado.",
       tech: ["React", "Tailwind CSS", "Vite", "Vercel"],
@@ -98,7 +98,7 @@ export default function Clients() {
               >
                 {/* Contenedor de Imagen con transición automática */}
                 <div className="relative aspect-video overflow-hidden w-full bg-black/20">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${client.accent} opacity-50 group-hover:opacity-30 transition-opacity z-10 mix-blend-overlay`} />
+                  <div className={`absolute inset-0 .bg-gradient-to-br ${client.accent} opacity-50 group-hover:opacity-30 transition-opacity z-10 mix-blend-overlay`} />
                   
                   {/* AGREGADO: AnimatePresence ejecuta el fundido suave al cambiar la imagen */}
                   <AnimatePresence mode="wait">
@@ -117,7 +117,7 @@ export default function Clients() {
                 </div>
                 
                 {/* Cuerpo del Proyecto */}
-                <div className="p-6 flex flex-col flex-grow relative z-10">
+                <div className="p-6 flex flex-col .flex-grow relative z-10">
                   
                   {/* Tipo de proyecto */}
                   <span className="text-xs text-accent font-mono uppercase tracking-wider mb-2 block">
@@ -128,7 +128,7 @@ export default function Clients() {
                     {client.name}
                   </h3>
                   
-                  <p className="text-muted-foreground text-sm mb-6 flex-grow leading-relaxed">
+                  <p className="text-muted-foreground text-sm mb-6 .flex-grow leading-relaxed">
                     {client.description}
                   </p>
 
@@ -177,7 +177,7 @@ export default function Clients() {
                 <div
                   key={s.name}
                   // Cambiado a flex-col en celular y flex-row en escritorio
-                  className="flex flex-col md:flex-row md:items-center justify-between gap-4 px-6 md:px-8 py-5 hover:bg-white/[0.03] transition-colors"
+                  className="flex flex-col md:flex-row md:items-center justify-between gap-4 px-6 md:px-8 py-5 .hover:bg-white/[0.03] transition-colors"
                 >
                   <div className="min-w-0 flex-1">
                     <div className="font-medium truncate text-base md:text-lg">{s.name}</div>
@@ -191,7 +191,7 @@ export default function Clients() {
                     href={s.reviewImageUrl}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium hover:bg-white/[0.08] hover:border-accent/40 transition-all"
+                    className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium .hover:bg-white/[0.08] hover:border-accent/40 transition-all"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
                     Ver opinion
@@ -202,7 +202,7 @@ export default function Clients() {
                     href={s.budgetUrl}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium hover:bg-white/[0.08] hover:border-accent/40 transition-all"
+                    className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium .hover:bg-white/[0.08] hover:border-accent/40 transition-all"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
                     Ver presupuesto
@@ -213,7 +213,7 @@ export default function Clients() {
                     href={s.url}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium hover:bg-white/[0.08] hover:border-accent/40 transition-all"
+                    className="inline-flex items-center gap-1.5 glass rounded-full px-4 py-2 text-xs font-medium .hover:bg-white/[0.08] hover:border-accent/40 transition-all"
                   >
                     <ExternalLink className="w-3.5 h-3.5" />
                     Ver página web

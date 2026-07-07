@@ -31,8 +31,8 @@ export function Social() {
               whileHover={{ y: -6 }}
               className="group relative glass rounded-3xl p-6 overflow-hidden hover:border-accent/40 transition-all"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${s.gradient} opacity-100 transition-opacity duration-500`} />
-              <div className="absolute -inset-px rounded-3xl opacity-60 group-hover:opacity-100 transition-opacity bg-gradient-to-br from-accent/40 to-transparent blur-2xl -z-10" />
+              <div className={`absolute inset-0 .bg-gradient-to-br ${s.gradient} opacity-100 transition-opacity duration-500`} />
+              <div className="absolute -inset-px rounded-3xl opacity-60 group-hover:opacity-100 transition-opacity .bg-gradient-to-br from-accent/40 to-transparent blur-2xl -z-10" />
 
               <div className="relative">
                 <div className="flex items-center justify-between">

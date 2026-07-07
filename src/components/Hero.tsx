@@ -98,21 +98,21 @@ export function Hero() {
           style={{ perspective: 1200 }}
         >
           <div className="relative animate-float">
-            <div className="absolute -inset-10 bg-gradient-to-br from-violet/40 via-cyan/30 to-transparent blur-3xl opacity-60" />
+            <div className="absolute -inset-10 .bg-gradient-to-br from-violet/40 via-cyan/30 to-transparent blur-3xl opacity-60" />
             <div className="relative glass-strong rounded-2xl p-1 shadow-[0_30px_80px_-20px_oklch(0_0_0/0.8)]">
               <div className="flex gap-1.5 px-3 py-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
               </div>
-              <div className="rounded-xl bg-gradient-to-br from-violet/20 via-card to-cyan/10 aspect-[4/3] p-6 flex flex-col gap-3">
+              <div className="rounded-xl .bg-gradient-to-br from-violet/20 via-card to-cyan/10 .aspect-[4/3] p-6 flex flex-col gap-3">
                 <div className="h-3 w-32 rounded-full bg-white/10" />
                 <div className="h-2 w-48 rounded-full bg-white/5" />
                 <div className="grid grid-cols-2 gap-3 mt-4 flex-1">
-                  <div className="rounded-lg bg-gradient-to-br from-violet/40 to-violet/10 border border-white/5" />
-                  <div className="rounded-lg bg-gradient-to-br from-cyan/30 to-cyan/5 border border-white/5" />
+                  <div className="rounded-lg .bg-gradient-to-br from-violet/40 to-violet/10 border border-white/5" />
+                  <div className="rounded-lg .bg-gradient-to-br from-cyan/30 to-cyan/5 border border-white/5" />
                   <div className="rounded-lg bg-white/5 border border-white/5" />
-                  <div className="rounded-lg bg-gradient-to-br from-gold/30 to-transparent border border-white/5" />
+                  <div className="rounded-lg .bg-gradient-to-br from-gold/30 to-transparent border border-white/5" />
                 </div>
               </div>
             </div>
