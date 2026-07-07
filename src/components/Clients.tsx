@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { MousePointerClick , ExternalLink} from 'lucide-react';
-import dynimage from "@/assets/dyn.jpg";
-import clientPlaceholder from "@/assets/client-placeholder.svg";
-import reviewPending from "@/assets/review-pending.svg";
+import dyn_web from "@/assets/dyn.jpg";
+import dyn_opinion from "@/assets/opinion-dyn.jpeg";
+import wilson_web from "@/assets/wilson.jpg";
+import wilson_opinion from "@/assets/review-pending.svg";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionLabel } from "./SectionLabel";
-import reviewImage from "@/assets/opinion-dyn.jpeg";
+
 
 // Corregido: Nombre de interfaz en singular para evitar conflictos
 interface ClientData {
@@ -27,23 +28,23 @@ export default function Clients() {
       name: "D&N Estudio Jurídico",
       type: "Web Institucional - Landing Page",
       url: "https://dyn-estudio-juridico.vercel.app",
-      image: dynimage, 
+      image: dyn_web, 
       description: "Plataforma web corporativa con sistema de asesoramiento, presentation de áreas de práctica especializada y un canal directo de contacto para resolver consultas legales.",
       tech: ["React", "Tailwind CSS", "Vite", "Vercel"],
       accent: "from-amber-500/20 via-amber-600/5 to-transparent",
       budgetUrl: "https://drive.google.com/file/d/1exN4b1llXtnUtzMrR_0J9J80ddBIoqLr/view?usp=drivesdk",
-      reviewImageUrl: reviewImage
+      reviewImageUrl: dyn_opinion
     },
     {
       name: "Wilson Arquitectura",
       type: "Web Institucional - Arquitectura",
       url: "https://wilson-seven-beryl.vercel.app",
-      image: clientPlaceholder,
+      image: wilson_web,
       description: "Sitio web institucional para el estudio de arquitectura con enfoque en proyectos residenciales y comerciales. Diseño moderno, enlaces directos a portafolio y contacto optimizado.",
       tech: ["React", "Tailwind CSS", "Vite", "Vercel"],
       accent: "from-sky-500/20 via-sky-600/5 to-transparent",
       budgetUrl: "https://drive.google.com/file/d/1UJtskcJ5IwhUZ1ss2Y6DipnEZ-zEiYzM/view?usp=sharing",
-      reviewImageUrl: reviewPending
+      reviewImageUrl: wilson_opinion
     }
   ];
 

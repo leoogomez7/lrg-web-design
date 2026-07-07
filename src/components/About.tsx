@@ -46,7 +46,7 @@ export function About() {
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
               { v: "+6", l: "Proyectos" },
-              { v: "+1", l: "Clientes satisfechos" },
+              { v: "+2", l: "Clientes satisfechos" },
                 { v: "2", l: "Años de exp." },
               ].map((s) => (
                 <div key={s.l} className="glass rounded-xl p-4">
@@ -56,18 +56,7 @@ export function About() {
               ))}
             </div>
 
-            <a
-              href="https://github.com/leoogomez7"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="group mt-8 inline-flex items-center gap-3 glass-strong rounded-full pl-2 pr-5 py-2 hover:bg-white/10 transition-colors"
-            >
-              <span className="w-9 h-9 rounded-full bg-foreground text-background flex items-center justify-center">
-                <Github className="w-4 h-4" />
-              </span>
-              <span className="text-sm font-medium">Ingresar al portafolio</span>
-              <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-foreground group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
-            </a>
+            {/* Enlace al portafolio eliminado a petición del usuario */}
           </motion.div>
 
           <motion.div
