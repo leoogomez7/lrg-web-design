@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { MousePointerClick , ExternalLink} from 'lucide-react';
-import dyn_web from "@/assets/dyn.jpg";
-import dyn_opinion from "@/assets/opinion-dyn.jpeg";
-import wilson_web from "@/assets/wilson.jpg";
-import wilson_opinion from "@/assets/review-pending.svg";
+import dyn_web from "@/assets/web1-dyn.jpg";
+import dyn_opinion from "@/assets/web1-dyn-opinion.jpg";
+import wilson_web from "@/assets/web2-wilson.jpg";
+import wilson_opinion from "@/assets/web2-wilson-opinion.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionLabel } from "./SectionLabel";
 
