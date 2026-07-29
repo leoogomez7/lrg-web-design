@@ -71,23 +71,6 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="mt-16 grid grid-cols-3 gap-6 text-sm"
-          >
-            {[
-              { v: "100%", l: "Diseño web adaptable" },
-              { v: "<1s", l: "Tiempo de carga" },
-              { v: "A+", l: "Máximo rendimiento" },
-            ].map((s) => (
-              <div key={s.l}>
-                <div className="font-display text-3xl font-semibold text-gradient">{s.v}</div>
-                <div className="text-xs text-muted-foreground mt-1 leading-snug">{s.l}</div>
-              </div>
-            ))}
-          </motion.div>
         </div>
 
         <motion.div

@@ -5,7 +5,6 @@ import dyn_opinion from "@/assets/web1-dyn-opinion.jpg";
 import wilson_web from "@/assets/web2-wilson.jpg";
 import wilson_opinion from "@/assets/web2-wilson-opinion.jpg";
 import { motion, AnimatePresence } from "framer-motion";
-import { SectionLabel } from "./SectionLabel";
 
 
 // Corregido: Nombre de interfaz en singular para evitar conflictos
@@ -67,8 +66,6 @@ export default function Clients() {
         {/* Título de Clientes */}
         <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
           <div>
-            <SectionLabel>02 — Clientes</SectionLabel>
-
             <h2 className="font-display text-4xl md:text-6xl font-semibold mt-4 tracking-tight">
               Mis clientes y <span className="text-gradient">su devolución</span>
             </h2>

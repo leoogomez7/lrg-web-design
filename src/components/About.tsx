@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
-import { SectionLabel } from "./SectionLabel";
 
 const knowledge = [
   "Lenguajes: C, C++, C#, JavaScript, HTML, CSS, SQL, R, Python",
@@ -18,9 +17,7 @@ export function About() {
   return (
     <section id="about" className="relative py-20 px-6">
       <div className="mx-auto max-w-7xl">
-        <SectionLabel>05 — Sobre mí</SectionLabel>
-
-        <div className="grid lg:grid-cols-[1fr_1.3fr] gap-16 mt-10">
+        <div className="grid lg:grid-cols-[1fr_1.3fr] gap-16 mt-10 items-start">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

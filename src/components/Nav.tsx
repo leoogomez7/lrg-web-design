@@ -32,9 +32,7 @@ export function Nav() {
          CAMBIO CLAVE: quitamos mx-auto y añadimos left-4.
          Ahora el menú se pega a la izquierda con un pequeño margen.
       */
-      className={`fixed top-4 inset-x-0 mx-auto z-50 transition-all duration-500 w-[90%] max-w-full box-border lg:w-[min(94%,1120px)] ${
-        scrolled ? ".max-w-[1040px]" : ".max-w-[1120px]"
-      }`}
+      className="fixed top-4 inset-x-0 z-50 transition-all duration-500"
     >
       {/* Contenedor tipo Cápsula Negra */}
       <div className={`flex items-center justify-between gap-3 px-3 py-2 rounded-full border border-white/10 transition-all duration-500 ${
@@ -85,7 +83,7 @@ export function Nav() {
             <a
               href="#top"
               onClick={() => setOpen(false)}
-              className="text-xs text-white font-medium px-4 py-2.5 rounded-xl hover:bg-white/10 w-full text-left"
+              className="text-sm text-white font-medium px-4 py-2.5 rounded-xl hover:bg-white/10 w-full text-left"
             >
               Inicio
             </a>

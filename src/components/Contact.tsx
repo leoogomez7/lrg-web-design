@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
-import { SectionLabel } from "./SectionLabel";
 import logo from "@/assets/logo.png";
 
 export function Contact() {
@@ -10,7 +9,6 @@ export function Contact() {
 
       <div className="relative mx-auto max-w-5xl">
         <div className="text-center mb-12">
-          <SectionLabel>06 — Contacto</SectionLabel>
         </div>
 
         <motion.div
