@@ -57,7 +57,7 @@ const packages = [
   {
     name: "Plan Profesional",
     icon: Gem,
-    price: "$60.000",
+    price: "$60.000 / año",
     note: "Dominio personalizado + Profesionalismo",
     accent: "violet",
     features: [
@@ -71,7 +71,7 @@ const packages = [
     {
     name: "Mantenimiento",
     icon: Gem,
-    price: "Desde $25.000",
+    price: "Desde $25.000 / mes",
     note: "Segura, rápida y actualizada mes a mes",
     accent: "violet",
     highlight: true,

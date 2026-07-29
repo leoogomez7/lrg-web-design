@@ -98,7 +98,7 @@ export function Nav({ cartCount, cartSummary }: { cartCount: number; cartSummary
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="lg:hidden w-full bg-black/95 backdrop-blur-2xl rounded-4xl p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
+            className="w-full bg-black/95 backdrop-blur-2xl rounded-4xl p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
           >
             <div className="text-sm text-white font-medium px-4 py-2.5 rounded-xl bg-white/5 w-full text-left">
               Carrito

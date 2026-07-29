@@ -200,9 +200,11 @@ export default function Clients() {
   return (
     <section id="clients" className="py-20 bg-background border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center mb-8">
           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-[10px] uppercase tracking-wider font-mono text-accent">
-           <Users className="w-3 h-3" /> Clientes
-            </div>
+            <Users className="w-3 h-3" /> Clientes
+          </div>
+        </div>
         {/* Título de Clientes */}
         <div className="flex flex-col items-center text-center gap-6 mb-12">
           <div>
