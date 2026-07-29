@@ -1,5 +1,6 @@
 import './index.css';
 import './App.css';
+import { useState } from 'react';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
@@ -11,11 +12,33 @@ import { About } from './components/About';
 import { Social } from './components/Social';
 import { Contact, Footer } from './components/Contact';
 
+export type CartSummary = {
+  pageLabel: string;
+  maintenanceLabel: string;
+  impulse: boolean;
+  professional: boolean;
+  total: number;
+  paymentMethod: string;
+  siteName: string;
+  name: string;
+  email: string;
+  whatsapp: string;
+  domainType: string;
+};
+
 function App() {
+  const [cartCount, setCartCount] = useState(0);
+  const [cartSummary, setCartSummary] = useState<CartSummary | null>(null);
+
+  const handleAddToCart = (summary: CartSummary) => {
+    setCartCount((value) => value + 1);
+    setCartSummary(summary);
+  };
+
   return (
     <div className="relative min-h-screen bg-background text-foreground">
       {/* 1. Navegación */}
-      <Nav />
+      <Nav cartCount={cartCount} cartSummary={cartSummary} />
       
       <main>
         {/* 2. Sección Principal */}
@@ -31,7 +54,7 @@ function App() {
         <Pricing />
 
         {/* 6. Nuevo apartado Comprar */}
-        <Comprar />
+        <Comprar onAddToCart={handleAddToCart} />
         
         {/* 7. Propuestas/Servicios */}
         <Proposals />
