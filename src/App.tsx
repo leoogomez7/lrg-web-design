@@ -4,6 +4,7 @@ import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
 import Clients from './components/Clients';
+import { Comprar } from './components/Comprar';
 import { Pricing } from './components/Pricing';
 import { Proposals } from './components/Proposals';
 import { About } from './components/About';
@@ -25,11 +26,14 @@ function App() {
 
         {/* 4. Apartado de Clientes */}
         <Clients />
-        
+
         {/* 5. Tabla de Precios */}
         <Pricing />
+
+        {/* 6. Nuevo apartado Comprar */}
+        <Comprar />
         
-        {/* 6. Propuestas/Servicios */}
+        {/* 7. Propuestas/Servicios */}
         <Proposals />
         
         {/* 7. Sobre mí */}

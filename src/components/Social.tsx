@@ -1,23 +1,34 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Instagram } from "lucide-react";
+import { ArrowUpRight, Instagram, Share2 } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
 
 const socials = [
   { handle: "@leoogomez7", label: "Personal", desc: "Un vistazo de mi día a día.", gradient: "from-pink-500/30 via-violet/20 to-orange-500/20" },
   { handle: "@lrg.web.design", label: "Diseño Web", desc: "Transformo ideas en experiencias digitales de alto impacto.", gradient: "from-violet/40 via-cyan/20 to-blue-500/20" },
-  { handle: "@psplus_argentina_ps4ps5", label: "Gaming", desc: "Venta de suscripciones de PlayStation y juegos digitales.", gradient: "from-blue-500/30 via-cyan/20 to-violet/20" },
+  { handle: "@lrg.arcade", label: "Gaming", desc: "Venta de suscripciones de PlayStation, juegos digitales, plataformas de streaming y productos gaming.", gradient: "from-blue-500/30 via-cyan/20 to-violet/20" },
   { handle: "@lrg.scents", label: "Perfumes", desc: "Descubre la exclusividad de las fragancias árabes.", gradient: "from-gold/30 via-amber-500/20 to-orange-500/20" },
+  { handle: "@lrg.store.shop", label: "Diseño Web + Gaming + Perfumes", desc: "Descubre el mundo de LRG Store, diseño de páginas web, sector gaming y tu aroma ideal en un solo lugar.", gradient: "from-gold/30 via-amber-500/20 to-orange-500/20" },
 ];
 
 export function Social() {
   return (
     <section id="social" className="relative py-20 px-6">
       <div className="mx-auto max-w-7xl">
-        <h3 className="font-display text-xl md:text-2xl font-semibold tracking-tight mb-6">
-          Mis redes sociales
-        </h3>
+        <div className="mx-auto max-w-2xl text-center space-y-4">
+          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-[10px] uppercase tracking-wider font-mono text-accent">
+            <Share2 className="w-3 h-3" /> Mis redes sociales
+          </div>
+          <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
+            Mi <span className="text-gradient">mundo digital</span>
+          </h2>
+          <p className="text-muted-foreground mt-5 max-w-2xl mx-auto">
+            Descubrí mis redes sociales personales y las de mis emprendimientos, desde diseño web y gaming hasta perfumes.
+          </p>
+          <h1>
+          </h1>
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid justify-items-center sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {socials.map((s, i) => (
             <motion.a
               key={s.handle}
@@ -29,7 +40,7 @@ export function Social() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.08 }}
               whileHover={{ y: -6 }}
-              className="group relative glass rounded-3xl p-6 overflow-hidden hover:border-accent/40 transition-all"
+              className="group relative glass rounded-3xl p-6 overflow-hidden hover:border-accent/40 transition-all w-full max-w-sm"
             >
               <div className={`absolute inset-0 .bg-gradient-to-br ${s.gradient} opacity-100 transition-opacity duration-500`} />
               <div className="absolute -inset-px rounded-3xl opacity-60 group-hover:opacity-100 transition-opacity .bg-gradient-to-br from-accent/40 to-transparent blur-2xl -z-10" />

@@ -22,6 +22,9 @@ export function Contact() {
           <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-cyan/20 blur-[120px]" />
 
           <div className="relative">
+           <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-[10px] uppercase tracking-wider font-mono text-accent">
+           <MessageCircle className="w-3 h-3" /> Contacto
+            </div>
             <h2 className="font-display text-4xl md:text-6xl font-semibold tracking-tight leading-tight">
               ¿Listo para llevar tu negocio al{" "}
               <span className="text-gradient">siguiente nivel digital?</span>

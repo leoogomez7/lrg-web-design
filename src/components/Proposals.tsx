@@ -38,7 +38,10 @@ export function Proposals() {
     <section id="proposals" className="relative py-20 px-6">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="font-display text-4xl md:text-6xl font-semibold mt-4 tracking-tight">
+          <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-[10px] uppercase tracking-wider font-mono text-accent">
+           <FileText className="w-3 h-3" /> Propuestas
+            </div>
+          <h2 className="font-display text-4xl md:text-6xl font-semibold mt-4 tracking-tight">          
             Planes de <span className="text-gradient">Transformación Digital</span>
           </h2>
           <p className="text-muted-foreground mt-5 max-w-xl mx-auto">

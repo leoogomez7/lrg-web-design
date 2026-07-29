@@ -1,11 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const links = [
-  { href: "#projects", label: "Ver proyectos" },
-    { href: "#clients", label: "Clientes" },
+  { href: "#projects", label: "Proyectos" },
+  { href: "#clients", label: "Clientes" },
+  { href: "#comprar", label: "Comprar" },
   { href: "#pricing", label: "Presupuestos" },
   { href: "#proposals", label: "Propuestas" },
   { href: "#about", label: "¿Quién soy?" },
@@ -32,7 +33,7 @@ export function Nav() {
          CAMBIO CLAVE: quitamos mx-auto y añadimos left-4.
          Ahora el menú se pega a la izquierda con un pequeño margen.
       */
-      className="fixed top-4 inset-x-0 z-50 transition-all duration-500"
+      className="fixed inset-x-0 top-0 z-[9999] transition-all duration-500"
     >
       {/* Contenedor tipo Cápsula Negra */}
       <div className={`flex items-center justify-between gap-3 px-3 py-2 rounded-full border border-white/10 transition-all duration-500 ${
@@ -65,6 +66,7 @@ export function Nav() {
           onClick={() => setOpen((v) => !v)}
           className="lg:hidden inline-flex items-center gap-1.5 h-8 px-3 rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
         >
+          <ShoppingCart className="w-3.5 h-3.5 text-white/80" />
           {open ? <X className="w-1.5 h-1.5" /> : <Menu className="w-3.5 h-3.5" />}
           <span className="text-[10px] font-medium">Menú</span>
         </button>
@@ -78,7 +80,7 @@ export function Nav() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             /* Alineado a la izquierda del header */
-            className="lg:hidden mt-2 w-full bg-black/95 backdrop-blur-2xl .rounded-[2rem] p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
+            className="lg:hidden w-full bg-black/95 backdrop-blur-2xl .rounded-[2rem] p-2 flex flex-col items-start border border-white/10 shadow-2xl overflow-hidden"
           >
             <a
               href="#top"

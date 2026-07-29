@@ -21,12 +21,12 @@ export function Hero() {
       <div className="absolute bottom-1/4 -right-32 h-96 w-96 rounded-full bg-cyan/20 blur-[120px] animate-glow" style={{ animationDelay: "2s" }} />
 
       <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-[1.2fr_1fr] gap-16 items-center">
-        <div>
+        <div className="text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight font-semibold"
+            className="mx-auto max-w-4xl font-display text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight font-semibold"
           >
             Tu Web,{" "}
             <span className="text-gradient">tus reglas.</span>{" "}
@@ -37,7 +37,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-8 text-lg text-muted-foreground max-w-xl leading-relaxed"
+            className="mx-auto mt-8 text-lg text-muted-foreground max-w-xl leading-relaxed"
           >
             Diseño y desarrollo páginas web rápidas, modernas y estratégicas
             enfocadas en conversión, imagen profesional y escalabilidad.
@@ -47,7 +47,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.55 }}
-            className="mt-10 flex flex-wrap gap-3"
+            className="mx-auto mt-10 flex flex-wrap justify-center items-center gap-3"
           >
             <a
               href="#projects"
@@ -56,7 +56,7 @@ export function Hero() {
               Ver proyectos
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
-                        <a
+            <a
               href="#clients"
               className="group inline-flex items-center gap-2 bg-foreground text-background px-6 py-3.5 rounded-full text-sm font-medium hover:scale-[1.02] transition-transform"
             >
@@ -64,8 +64,14 @@ export function Hero() {
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
             <a
+              href="#comprar"
+              className="group inline-flex items-center justify-center rounded-full bg-gradient-to-r from-gold via-amber-400 to-orange-400 px-6 py-3.5 text-sm font-semibold text-background shadow-lg shadow-gold/30 transition hover:-translate-y-0.5 hover:shadow-[0_18px_60px_-20px_rgba(245,158,11,0.65)]"
+            >
+              Comprar
+            </a>
+            <a
               href="#contact"
-              className="inline-flex items-center gap-2 glass-strong px-6 py-3.5 rounded-full text-sm font-medium hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-6 py-3.5 text-sm font-semibold text-black shadow-lg shadow-emerald-500/30 transition hover:bg-emerald-400"
             >
               Contactar
             </a>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github, User } from "lucide-react";
 
 const knowledge = [
   "Lenguajes: C, C++, C#, JavaScript, HTML, CSS, SQL, R, Python",
@@ -19,13 +19,17 @@ export function About() {
       <div className="mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-[1fr_1.3fr] gap-16 mt-10 items-start">
           <motion.div
+            className="mx-auto max-w-2xl"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
+            <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-[10px] uppercase tracking-wider font-mono text-accent">
+              <User className="w-3 h-3" /> ¿Quién soy?
+            </div>
             <h2 className="font-display text-4xl md:text-5xl font-semibold leading-tight tracking-tight">
-              Leonardo <span className="text-gradient">Gómez</span>
+              Soy <span className="text-gradient">Leonardo Gómez</span>
             </h2>
             <p className="text-sm text-accent mt-2 font-medium">
               Analista de Sistemas · Desarrollador Web
@@ -57,6 +61,7 @@ export function About() {
           </motion.div>
 
           <motion.div
+            className="mx-auto max-w-lg"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
